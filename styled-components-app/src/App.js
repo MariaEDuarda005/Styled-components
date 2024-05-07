@@ -41,8 +41,8 @@ function App() {
       <GlobalStyle/>
       <div className="App">
         <Title theme={activeTheme}/>
-        <Button onClick={handleTheme}>Mudar o tema</Button>
-        <Title>Outro titulo</Title>
+        <Button onClick={handleTheme}>Or</Button>
+        <Title>All black?</Title>
       </div>
     </ThemeProvider>
   );
