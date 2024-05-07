@@ -11,6 +11,16 @@ const Button = styled.button`
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+
+    @media (max-width: 1020px) {
+        padding: 15px 25px;
+        font-size: 15px;
+      }
+
+    @media (max-width: 600px) {
+        padding: 10px 20px;
+        font-size: 10px;
+      }
 `
 
 export default Button

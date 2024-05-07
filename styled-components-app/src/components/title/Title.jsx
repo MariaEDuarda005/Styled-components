@@ -9,6 +9,15 @@ const Title = styled.h1`
     ${props => props.theme.isDark && `
         color: ${props.theme.colors.white};
     `}
+
+    @media (max-width: 1020px) {
+        font-size: 25px;
+      }
+
+
+    @media (max-width: 600px) {
+        font-size: 15px;
+      }
 `
 
 Title.defaultProps = {
