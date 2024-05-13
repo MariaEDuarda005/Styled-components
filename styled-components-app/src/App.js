@@ -5,6 +5,7 @@ import Title from './components/title/Title';
 import Button from './components/button/Button';
 import theme, { darkThemeColors } from './theme';
 
+// Estilo global para o aplicativo
 const GlobalStyle = createGlobalStyle`
   html, body {
     background-color: ${props => props.theme.colors.white};
@@ -18,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
+// Tema escuro com base no tema padrão
 const darkTheme = {
   ...theme,
   colors: {
@@ -26,6 +28,7 @@ const darkTheme = {
   }
 }
 
+// Estiliza o container principal do aplicativo
 const Container = styled.div`
   background-color: ${props => props.theme.colors.gray};
   padding: 20px;
@@ -50,11 +53,19 @@ const Container = styled.div`
     padding: 10px;
     margin: 10px;
   }
+
+   /* Altera a cor de fundo quando o tema é escuro */
+   /* ${props => props.theme.isDark && `
+    background-color: ${props.theme.colors.black};
+  `} */
+  
 `;
 
+// Componente principal do aplicativo
 function App() {
   const [activeTheme, setActiveTheme] = useState(theme)
 
+  // Função para alternar entre o tema claro e escuro
   const handleTheme = () => {
     setActiveTheme(activeTheme === theme ? darkTheme : theme);
   }

@@ -1,13 +1,15 @@
+// Definição do tema padrão
 const theme = {
     colors:{
-        primary: '#11a2d7',
+        primary: '#D067A6',
         white: '#fff',
         black: '#000',
         red: '#780000',
-        gray: '#CCCC'
+        gray: '#979dac'
     }
 }
 
+// Definição do tema escuro
 export const darkThemeColors = {
     white: '#000', 
     black: '#fff' 

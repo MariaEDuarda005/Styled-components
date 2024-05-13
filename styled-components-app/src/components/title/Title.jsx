@@ -20,6 +20,7 @@ const Title = styled.h1`
       }
 `
 
+// Define um texto padrão caso nenhum seja fornecido
 Title.defaultProps = {
     children: 'All white?'
 }

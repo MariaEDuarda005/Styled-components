@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-//styled.button button é o nome do componente que queremos usar
+// Estiliza o botão com base nas props e no tema fornecido
 const Button = styled.button`
     background-color: ${props => props.theme.colors.primary};
     padding: 20px 30px;
